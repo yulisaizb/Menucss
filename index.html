@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Atributos CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li class="dropdown">
+                    <a href="#tabla-atributos">Tabla de Atributos CSS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#font-size-row">font-size</a></li>
+                        <li><a href="#border-radius-row">border-radius</a></li>
+                        <li><a href="#display-row">display</a></li>
+                        <li><a href="#flexbox-row">flexbox</a></li>
+                        <li><a href="#position-row">position</a></li>
+                        <li><a href="#box-shadow-row">box-shadow</a></li>
+                        <li><a href="#overflow-row">overflow</a></li>
+                        <li><a href="#z-index-row">z-index</a></li>
+                        <li><a href="#opacity-row">opacity</a></li>
+                        <li><a href="#margin-row">margin</a></li>
+                        <li><a href="#padding-row">padding</a></li>
+                        <li><a href="#color-row">color</a></li>
+                        <li><a href="#background-color-row">background-color</a></li>
+                        <li><a href="#width-row">width</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="css">
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <p>
+                CSS es un lenguaje de hojas de estilo utilizado para describir la presentación de un documento escrito en un lenguaje de marcado como HTML. Es fundamental en el desarrollo web para controlar el diseño, la apariencia visual y la disposición de los elementos en una página web.
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                <img src="images/css_logo.png" alt="Logo de CSS" class="info-image">
+                <!-- Asegúrate de guardar una imagen llamada css_logo.png en la carpeta images -->
+            </a>
+        </section>
+
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <p>
+                JavaScript es un lenguaje de programación esencial para la web moderna. Permite añadir interactividad, dinamismo y funcionalidades complejas a las páginas web, mejorando la experiencia del usuario. Desde validar formularios hasta crear animaciones y aplicaciones web completas, JavaScript juega un papel crucial.
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                <img src="images/js_logo.png" alt="Logo de JavaScript" class="info-image">
+                <!-- Asegúrate de guardar una imagen llamada js_logo.png en la carpeta images -->
+            </a>
+        </section>
+
+        <section id="tabla-atributos">
+            <h2>Tabla de Atributos CSS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Descripción</th>
+                        <th>Valores Posibles</th>
+                        <th>Ejemplo de Uso</th>
+                        <th>Fuente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Atributo 1: font-size -->
+                    <tr id="font-size-row">
+                        <td data-label="Atributo">font-size</td>
+                        <td data-label="Descripción">Define el tamaño de la fuente del texto.</td>
+                        <td data-label="Valores Posibles"><code>&lt;length&gt;</code> (px, em, rem), <code>&lt;percentage&gt;</code>, palabras clave (small, medium, large), etc.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>p {\n  font-size: 16px;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/font-size" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 2: border-radius -->
+                    <tr id="border-radius-row">
+                        <td data-label="Atributo">border-radius</td>
+                        <td data-label="Descripción">Permite redondear las esquinas de un elemento.</td>
+                        <td data-label="Valores Posibles"><code>&lt;length&gt;</code> (px, em), <code>&lt;percentage&gt;</code>. Se pueden especificar hasta 4 valores para cada esquina.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>div {\n  border-radius: 10px;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/border-radius" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 3: display -->
+                    <tr id="display-row">
+                        <td data-label="Atributo">display</td>
+                        <td data-label="Descripción">Especifica el tipo de caja de renderizado usada por un elemento (bloque, en línea, flex, grid, etc.).</td>
+                        <td data-label="Valores Posibles"><code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>flex</code>, <code>grid</code>, <code>none</code>, etc.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>span {\n  display: block;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/display" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 4: display: flex (Flexbox) -->
+                    <tr id="flexbox-row">
+                        <td data-label="Atributo">display: flex</td>
+                        <td data-label="Descripción">Activa el contexto de formato Flexbox para los hijos directos del contenedor, permitiendo un control avanzado sobre la alineación y distribución del espacio.</td>
+                        <td data-label="Valores Posibles">El valor es <code>flex</code>. Se complementa con propiedades como <code>flex-direction</code>, <code>justify-content</code>, <code>align-items</code>, etc.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>.container {\n  display: flex;\n  justify-content: space-between;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 5: position -->
+                    <tr id="position-row">
+                        <td data-label="Atributo">position</td>
+                        <td data-label="Descripción">Especifica el método de posicionamiento utilizado para un elemento (static, relative, absolute, fixed, sticky).</td>
+                        <td data-label="Valores Posibles"><code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code>.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>.tooltip {\n  position: absolute;\n  top: 0;\n  left: 20px;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                    </tr>
+                     <!-- Atributo 6: box-shadow -->
+                    <tr id="box-shadow-row">
+                        <td data-label="Atributo">box-shadow</td>
+                        <td data-label="Descripción">Añade efectos de sombra alrededor del marco de un elemento. Se pueden especificar múltiples sombras.</td>
+                        <td data-label="Valores Posibles"><code>none</code> | <code>&lt;shadow&gt;</code> [ , <code>&lt;shadow&gt;</code> ]* donde <code>&lt;shadow&gt;</code> es <code>inset? && &lt;length&gt;{2,4} && &lt;color&gt;?</code></td>
+                        <td data-label="Ejemplo de Uso"><pre><code>div {\n  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/box-shadow" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 7: overflow -->
+                    <tr id="overflow-row">
+                        <td data-label="Atributo">overflow</td>
+                        <td data-label="Descripción">Controla cómo se muestra el contenido que excede las dimensiones de su contenedor.</td>
+                        <td data-label="Valores Posibles"><code>visible</code>, <code>hidden</code>, <code>clip</code>, <code>scroll</code>, <code>auto</code>.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>.text-box {\n  height: 100px;\n  overflow: auto;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/overflow" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 8: z-index -->
+                    <tr id="z-index-row">
+                        <td data-label="Atributo">z-index</td>
+                        <td data-label="Descripción">Especifica el orden de apilamiento (profundidad) de un elemento posicionado. Elementos con mayor z-index se muestran sobre elementos con menor z-index.</td>
+                        <td data-label="Valores Posibles"><code>auto</code> | <code>&lt;integer&gt;</code>.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>.modal {\n  position: fixed;\n  z-index: 1000;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 9: opacity -->
+                    <tr id="opacity-row">
+                        <td data-label="Atributo">opacity</td>
+                        <td data-label="Descripción">Define el nivel de opacidad de un elemento. 0 es totalmente transparente, 1 es totalmente opaco.</td>
+                        <td data-label="Valores Posibles"><code>&lt;number&gt;</code> entre 0.0 y 1.0.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>.overlay {\n  opacity: 0.8;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/opacity" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 10: margin -->
+                    <tr id="margin-row">
+                        <td data-label="Atributo">margin</td>
+                        <td data-label="Descripción">Establece el espacio de margen en los cuatro lados de un elemento. Es el espacio fuera del borde.</td>
+                        <td data-label="Valores Posibles"><code>&lt;length&gt;</code> (px, em, rem), <code>&lt;percentage&gt;</code>, <code>auto</code>. Se pueden especificar 1, 2, 3 o 4 valores.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>p {\n  margin: 10px 20px;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/margin" target="_blank">MDN</a></td>
+                    </tr>
+                     <!-- Atributo 11: padding -->
+                    <tr id="padding-row">
+                        <td data-label="Atributo">padding</td>
+                        <td data-label="Descripción">Establece el espacio de relleno en los cuatro lados de un elemento. Es el espacio entre el contenido y el borde.</td>
+                        <td data-label="Valores Posibles"><code>&lt;length&gt;</code> (px, em, rem), <code>&lt;percentage&gt;</code>. Se pueden especificar 1, 2, 3 o 4 valores.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>div {\n  padding: 15px;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/padding" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 12: color -->
+                    <tr id="color-row">
+                        <td data-label="Atributo">color</td>
+                        <td data-label="Descripción">Establece el color del texto de un elemento.</td>
+                        <td data-label="Valores Posibles"><code>&lt;color&gt;</code> (nombre, hex, rgb, hsl).</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>h1 {\n  color: #3498db;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/color" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 13: background-color -->
+                    <tr id="background-color-row">
+                        <td data-label="Atributo">background-color</td>
+                        <td data-label="Descripción">Establece el color de fondo de un elemento.</td>
+                        <td data-label="Valores Posibles"><code>&lt;color&gt;</code> (nombre, hex, rgb, hsl), <code>transparent</code>.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>body {\n  background-color: #ecf0f1;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/background-color" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Atributo 14: width -->
+                    <tr id="width-row">
+                        <td data-label="Atributo">width</td>
+                        <td data-label="Descripción">Especifica el ancho del área de contenido de un elemento.</td>
+                        <td data-label="Valores Posibles"><code>auto</code>, <code>&lt;length&gt;</code> (px, em, rem), <code>&lt;percentage&gt;</code>, <code>max-content</code>, <code>min-content</code>, <code>fit-content()</code>.</td>
+                        <td data-label="Ejemplo de Uso"><pre><code>.container {\n  width: 80%;\n}</code></pre></td>
+                        <td data-label="Fuente"><a href="https://developer.mozilla.org/es/docs/Web/CSS/width" target="_blank">MDN</a></td>
+                    </tr>
+                    <!-- Puedes añadir más atributos aquí si lo deseas -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+</html> 
